@@ -314,9 +314,6 @@ body {
       left: 50%;
       bottom: 15px;
       bottom: calc(env(safe-area-inset-bottom) + 15px);
-
-      &.active {
-      }
     }
   }
 }
