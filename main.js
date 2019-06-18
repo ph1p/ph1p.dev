@@ -73,6 +73,7 @@ const shapes = [
   }
 ];
 
+const headerElement = document.querySelector('.header');
 const contentSections = document.querySelectorAll('.content');
 const menuElement = document.querySelectorAll('.menu li');
 const background = document.querySelector('.background');
@@ -238,33 +239,39 @@ function toggleMenu() {
       });
     }
     setMenuIcon(path);
+  } else {
+
+    const targets =
+      window.document.scrollingElement ||
+      window.document.body ||
+      window.document.documentElement;
+
+    anime.remove(targets);
+    anime({
+      targets,
+      scrollTop: document.body.scrollHeight,
+      duration: 1000,
+      easing: 'easeInOutQuad'
+    });
   }
 }
 
-//   if (
-//     window.pageYOffset + element.clientHeight * 0.2 >=
-//       element.clientHeight + element.offsetTop ||
-//     element.clientHeight + window.pageYOffset - element.clientHeight * 0.5 <=
-//       element.offsetTop
-//   ) {
-//     active
-//   } else {
-//   }
-// }
-
 function debounce(func, wait, immediate) {
-  var timeout;
+  let timeout;
   return function() {
-    var context = this,
-      args = arguments;
-    var later = function() {
+    const later = () => {
       timeout = null;
-      if (!immediate) func.apply(context, args);
+      if (!immediate) {
+        func.apply(this, arguments);
+      }
     };
-    var callNow = immediate && !timeout;
+    const callNow = immediate && !timeout;
     clearTimeout(timeout);
     timeout = setTimeout(later, wait);
-    if (callNow) func.apply(context, args);
+
+    if (callNow) {
+      func.apply(this, arguments);
+    }
   };
 }
 
@@ -326,7 +333,6 @@ function animate(index) {
 }
 
 const createScrollWatchers = () => {
-  const headerElement = document.querySelector('.header');
   const headerHeight = headerElement.clientHeight;
 
   let currentScrollTop = 0;
