@@ -1,0 +1,8 @@
+{
+  "background_color": "#ebebeb",
+  "theme_color": "#ebebeb",
+  "name": "ph1p",
+  "short_name": "ph1p",
+  "display": "standalone",
+  "orientation": "portrait"
+}
