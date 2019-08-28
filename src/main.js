@@ -1,9 +1,9 @@
 import anime from 'animejs';
 import Splitting from 'splitting';
+import scrollMonitor from 'scrollmonitor';
 import shapes from './assets/js/shapes';
 
 import './assets/scss/style.scss';
-import './assets/js/scrollMonitor';
 
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {

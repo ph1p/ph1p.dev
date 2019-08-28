@@ -4,6 +4,7 @@
   "description": "",
   "dependencies": {
     "animejs": "^3.1.0",
+    "scrollmonitor": "^1.2.4",
     "splitting": "^1.0.6"
   },
   "devDependencies": {
