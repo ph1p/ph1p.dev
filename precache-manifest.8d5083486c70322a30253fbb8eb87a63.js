@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "62da9d6d2679be30ff5a",
+    "revision": "8c5154c62f4a00c9fd79",
     "url": "bundle.js"
   },
   {
@@ -92,6 +92,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "icons/favicon.ico"
   },
   {
+    "revision": "7f75ff3e851a934ce25c7268b010bcf9",
+    "url": "icons/icon-512x512.png"
+  },
+  {
     "revision": "415d6dad018489b9d071781bb174b569",
     "url": "icons/ms-icon-144x144.png"
   },
@@ -108,15 +112,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "icons/ms-icon-70x70.png"
   },
   {
-    "revision": "3e8a452cdcadc065a0fe29a346754676",
+    "revision": "d3aa8150941a66e3772df716fc0cfbdd",
     "url": "index.html"
   },
   {
-    "revision": "62da9d6d2679be30ff5a",
+    "revision": "8c5154c62f4a00c9fd79",
     "url": "main.css"
   },
   {
-    "revision": "ff60a8cd2ea582d783953c58d142e97e",
+    "revision": "9699c8b50798c118cb3662416f038b8b",
     "url": "manifest.json"
   }
 ]);
