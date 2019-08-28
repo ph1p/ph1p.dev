@@ -121,6 +121,22 @@ body {
       svg {
         margin-bottom: -4px;
       }
+      &.stackoverflow {
+        width: 19px;
+        height: 23px;
+      }
+      &.twitter {
+        width: 22px;
+        height: 20px;
+      }
+      &.github {
+        width: 21px;
+        height: 21px;
+      }
+      &.codepen {
+        width: 24px;
+        height: 24px;
+      }
       &:hover {
         &.stackoverflow,
         &.github,

@@ -1,3 +1,9 @@
+import anime from 'animejs';
+import Splitting from 'splitting';
+
+import './assets/scss/style.scss';
+import './assets/js/scrollMonitor';
+
 const shapes = [
   {
     d:
@@ -240,7 +246,6 @@ function toggleMenu() {
     }
     setMenuIcon(path);
   } else {
-
     const targets =
       window.document.scrollingElement ||
       window.document.body ||

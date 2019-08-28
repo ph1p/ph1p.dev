@@ -1,0 +1,39 @@
+{
+  "name": "ph1p.dev",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "animejs": "^3.1.0",
+    "splitting": "^1.0.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-loader": "^8.0.6",
+    "copy-webpack-plugin": "^5.0.4",
+    "css-loader": "^3.2.0",
+    "dart-sass": "^1.22.10",
+    "html-webpack-plugin": "^4.0.0-beta.8",
+    "mini-css-extract-plugin": "^0.8.0",
+    "sass-loader": "^7.3.1",
+    "style-loader": "^1.0.0",
+    "svg-inline-loader": "^0.8.0",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.7"
+  },
+  "scripts": {
+    "start": "NODE_ENV=development webpack -w",
+    "build": "NODE_ENV=production webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ph1p/ph1p.dev.git"
+  },
+  "keywords": [],
+  "author": "Philip Stapelfeldt <phil@capshake.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ph1p/ph1p.dev/issues"
+  },
+  "homepage": "https://github.com/ph1p/ph1p.dev#readme"
+}

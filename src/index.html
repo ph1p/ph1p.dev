@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link name="description" content="A small website about me" />
+    <link name="keywords" content="developer, full-stack, germany, javascript, nodejs, typescript" />
+    <link rel="manifest" href="manifest.json" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Hi I'm Phil</title>
+  </head>
+  <body class="preload">
+    <main id="main">
+      <div class="background">
+        <svg
+          width="1286"
+          height="1242"
+          viewBox="0 0 1286 1242"
+          style="transform: scaleX(2.5) scaleY(1) translateX(0px) translateY(0px) rotate(0deg);"
+        >
+          <!-- <filter id="gooey">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+            <feColorMatrix
+              in="blur"
+              type="matrix"
+              values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+              result="goo"
+            />
+            <feBlend in="SourceGraphic" in2="goo" />
+          </filter> -->
+          <path
+            class="target"
+            d="M1004.82 552.248C1289.7 821.474 780.2 1430.05 600.911 956.159C421.622 482.27 197 775.322 197 552.248C197 329.174 273.122 287.125 600.911 148.337C928.7 9.54762 719.944 283.022 1004.82 552.248Z"
+            fill="url(#bg-gradient)"
+          />
+          <linearGradient
+            id="bg-gradient"
+            x1="790.134"
+            y1="105.134"
+            x2="-115.822"
+            y2="722.378"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop id="bg-gradient-color-start" stop-color="#F1CCA7" />
+            <stop id="bg-gradient-color-stop" offset="1" stop-color="#F47E9A" />
+          </linearGradient>
+        </svg>
+      </div>
+
+      <header class="header">
+        <div class="logo"></div>
+        <div class="social">
+          <div class="icon stackoverflow">
+            <a
+              target="_blank"
+              href="https://stackoverflow.com/users/6429774/phil"
+            >
+            <%= require('./assets/img/stackoverflow.svg') %>
+            </a>
+          </div>
+          <div class="icon codepen">
+            <a target="_blank" href="https://codepen.io/ph1p">
+              <%= require('./assets/img/codepen.svg') %>
+            </a>
+          </div>
+          <div class="icon github">
+            <a target="_blank" href="https://github.com/ph1p">
+              <%= require('./assets/img/github.svg') %>
+            </a>
+          </div>
+          <div class="icon twitter">
+            <a target="_blank" href="https://twitter.com/phlp_">
+              <%= require('./assets/img/twitter.svg') %>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <div class="sections">
+        <section class="content home" id="home">
+          <div id="home-trigger"></div>
+          <div class="text">
+            Hi, I'm <strong>Phil</strong> a developer from germany
+          </div>
+        </section>
+        <section class="content about" id="about">
+          <div class="text">
+            I love the web, open source and everything related to it. I like to
+            write plugins and tools to solve problems and maybe save some time.
+          </div>
+        </section>
+        <section class="content skills" id="skills">
+          <div class="text">
+            <div class="skill-list">
+              <div class="skill">JavaScript</div>
+              <div class="skill">TypeScript</div>
+              <div class="skill">HTML5&CSS</div>
+              <div class="skill">vue.js</div>
+              <div class="skill">react</div>
+              <div class="skill">angular</div>
+              <div class="skill">docker</div>
+              <div class="skill">electron</div>
+              <div class="skill">React-Native</div>
+              <div class="skill">NativeScript</div>
+              <div class="skill">node.js</div>
+              <div class="skill">php</div>
+              <div class="skill">SQL</div>
+              <div class="skill">mongoDB</div>
+              <div class="skill">redis</div>
+              <div class="skill">etc.</div>
+            </div>
+          </div>
+        </section>
+        <section class="content contact" id="contact">
+          <div class="text">
+            Just drop me a line
+            <p>
+              on
+              <a href="https://codepen.com/ph1p"> <strong>codepen</strong> </a>,
+              <a href="https://github.com/ph1p">
+                <strong>github</strong>
+              </a>
+              or
+              <a href="https://twitter.com/phlp_">
+                <strong>twitter</strong>
+              </a>
+            </p>
+          </div>
+        </section>
+      </div>
+
+      <nav class="menu">
+        <ul>
+          <li>
+            <a href="#home">
+              hi
+            </a>
+          </li>
+          <li>
+            <a href="#about">
+              about me
+            </a>
+          </li>
+          <li>
+            <a href="#skills">
+              what I do
+            </a>
+          </li>
+          <li>
+            <a href="#contact">
+              contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="hamburger">
+        <svg
+          width="61"
+          height="62"
+          viewBox="0 0 61 62"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M31 10V53M31 53L13 36.6017M31 53L49 36.6017"
+            stroke="black"
+          />
+        </svg>
+      </div>
+    </main>
+  </body>
+</html>
