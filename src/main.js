@@ -311,7 +311,7 @@ const createScrollWatchers = () => {
         anime.remove(targets);
         autoScrollAnimation = anime({
           targets,
-          scrollTop: document.querySelector('.content.active').offsetTop,
+          scrollTop: document.querySelector('.content.active').offsetTop || 0,
           duration: 400,
           easing: 'easeInOutQuad'
         });

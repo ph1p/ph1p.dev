@@ -198,6 +198,9 @@ body {
         font-size: 35px;
         line-height: 50px;
         color: #333;
+        .or {
+          margin: 0 0.6vw;
+        }
         @include media('<=tablet') {
           margin: 20px 0 0 0;
           font-size: 20px;
@@ -256,9 +259,9 @@ body {
     z-index: 2;
 
     a {
-      transition: color 0.3s;
+      transition: font-weight 0.3s;
       text-decoration: none;
-      color: #a4a4a4;
+      color: #000;
       display: block;
     }
     ul {
@@ -276,7 +279,7 @@ body {
         &.active,
         &:hover {
           a {
-            color: #000;
+            font-weight: bold;
           }
         }
         &:last-child {

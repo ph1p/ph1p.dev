@@ -4,18 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link name="description" content="A small website about me" />
-
-    <link
-      rel="shortcut icon"
-      href="/icons/favicon.ico"
-      type="image/x-icon"
+    <meta name="theme-color" content="#ebebeb" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="Description"
+      content="A small website about me, Developer: P. Stapelfeldt"
     />
-    <link
-      rel="icon"
-      href="/icons/favicon.ico"
-      type="image/x-icon"
-    />
+    <meta name="msapplication-TileImage" content="/icons/ms-icon-144x144.png" />
+    <link rel="shortcut icon" href="/icons/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/icons/favicon.ico" type="image/x-icon" />
 
     <link
       rel="apple-touch-icon"
@@ -86,11 +83,6 @@
       sizes="16x16"
       href="/icons/favicon-16x16.png"
     />
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta
-      name="msapplication-TileImage"
-      content="/icons/ms-icon-144x144.png"
-    />
     <link
       name="keywords"
       content="developer, full-stack, germany, javascript, nodejs, typescript"
@@ -136,24 +128,41 @@
         <div class="social">
           <div class="icon stackoverflow">
             <a
+              aria-label="Opens my stackoverflow profile"
               target="_blank"
+              rel="noopener"
               href="https://stackoverflow.com/users/6429774/phil"
             >
               <%= require('./assets/img/stackoverflow.svg') %>
             </a>
           </div>
           <div class="icon codepen">
-            <a target="_blank" href="https://codepen.io/ph1p">
+            <a
+              aria-label="Opens my codepen profile"
+              target="_blank"
+              rel="noopener"
+              href="https://codepen.io/ph1p"
+            >
               <%= require('./assets/img/codepen.svg') %>
             </a>
           </div>
           <div class="icon github">
-            <a target="_blank" href="https://github.com/ph1p">
+            <a
+              aria-label="Opens my github profile"
+              target="_blank"
+              rel="noopener"
+              href="https://github.com/ph1p"
+            >
               <%= require('./assets/img/github.svg') %>
             </a>
           </div>
           <div class="icon twitter">
-            <a target="_blank" href="https://twitter.com/phlp_">
+            <a
+              aria-label="Opens my twitter profile"
+              target="_blank"
+              rel="noopener"
+              href="https://twitter.com/phlp_"
+            >
               <%= require('./assets/img/twitter.svg') %>
             </a>
           </div>
@@ -200,12 +209,29 @@
             Just drop me a line
             <p>
               on
-              <a href="https://codepen.com/ph1p"> <strong>codepen</strong> </a>,
-              <a href="https://github.com/ph1p">
+              <a
+                aria-label="Opens my codepen profile"
+                href="https://codepen.com/ph1p"
+                target="_blank"
+                rel="noopener"
+              >
+                <strong>codepen</strong> </a
+              >,
+              <a
+                aria-label="Opens my github profile"
+                href="https://github.com/ph1p"
+                target="_blank"
+                rel="noopener"
+              >
                 <strong>github</strong>
               </a>
-              or
-              <a href="https://twitter.com/phlp_">
+              <span class="or">or</span>
+              <a
+                aria-label="Opens my twitter profile"
+                href="https://twitter.com/phlp_"
+                target="_blank"
+                rel="noopener"
+              >
                 <strong>twitter</strong>
               </a>
             </p>
