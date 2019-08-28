@@ -57,6 +57,10 @@ module.exports = {
       {
         from: './src/manifest.json',
         to: './manifest.json'
+      },
+      {
+        from: './src/docker-compose.yml',
+        to: './docker-compose.yml'
       }
     ]),
     new MiniCssExtractPlugin({
