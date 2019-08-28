@@ -2,11 +2,100 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="index, follow" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link name="description" content="A small website about me" />
-    <link name="keywords" content="developer, full-stack, germany, javascript, nodejs, typescript" />
-    <link rel="manifest" href="manifest.json" />
+
+    <link
+      rel="shortcut icon"
+      href="<%= require('./assets/img/icons/favicon.ico') %>"
+      type="image/x-icon"
+    />
+    <link
+      rel="icon"
+      href="<%= require('./assets/img/icons/favicon.ico') %>"
+      type="image/x-icon"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="<%= require('./assets/img/icons/apple-icon-57x57.png') %>"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="<%= require('./assets/img/icons/apple-icon-60x60.png') %>"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="<%= require('./assets/img/icons/apple-icon-72x72.png') %>"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="<%= require('./assets/img/icons/apple-icon-76x76.png') %>"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="<%= require('./assets/img/icons/apple-icon-114x114.png') %>"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="<%= require('./assets/img/icons/apple-icon-120x120.png') %>"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="<%= require('./assets/img/icons/apple-icon-144x144.png') %>"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="<%= require('./assets/img/icons/apple-icon-152x152.png') %>"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="<%= require('./assets/img/icons/apple-icon-180x180.png') %>"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="<%= require('./assets/img/icons/android-icon-192x192.png') %>"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="<%= require('./assets/img/icons/favicon-32x32.png') %>"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="<%= require('./assets/img/icons/favicon-96x96.png') %>"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="<%= require('./assets/img/icons/favicon-16x16.png') %>"
+    />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="<%= require('./assets/img/icons/ms-icon-144x144.png') %>"
+    />
+    <link
+      name="keywords"
+      content="developer, full-stack, germany, javascript, nodejs, typescript"
+    />
+    <link rel="manifest" href="/manifest.json" />
     <link
       href="https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap"
       rel="stylesheet"
@@ -50,7 +139,7 @@
               target="_blank"
               href="https://stackoverflow.com/users/6429774/phil"
             >
-            <%= require('./assets/img/stackoverflow.svg') %>
+              <%= require('./assets/img/stackoverflow.svg') %>
             </a>
           </div>
           <div class="icon codepen">
