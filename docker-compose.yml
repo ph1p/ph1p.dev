@@ -1,0 +1,20 @@
+version: '3.3'
+
+services:
+  nginx:
+    image: nginx:latest
+    restart: always
+    volumes:
+      - ./:/usr/share/nginx/html
+    labels:
+      - traefik.enable=true
+      - traefik.frontend.rule=Host:ph1p.dev
+      - traefik.port=80
+      - traefik.docker.network=proxy
+    networks:
+      - default
+      - proxy
+
+networks:
+  proxy:
+    external: true
