@@ -1,83 +1,10 @@
 import anime from 'animejs';
 import Splitting from 'splitting';
+import shapes from './assets/js/shapes';
 
 import './assets/scss/style.scss';
 import './assets/js/scrollMonitor';
 
-const shapes = [
-  {
-    d:
-      'M1004.82 552.248C1289.7 821.474 780.2 1430.05 600.911 956.159C421.622 482.27 197 775.322 197 552.248C197 329.174 273.122 287.125 600.911 148.337C928.7 9.54762 719.944 283.022 1004.82 552.248Z',
-    scaleX: 3,
-    scaleY: 1,
-    rotate: 0,
-    translateX: 0,
-    translateY: 0,
-    duration: 2000,
-    gradient: {
-      x1: 790.134,
-      y1: 105.134,
-      x2: -115.822,
-      y2: 722.378,
-      start: '#F1CCA7',
-      stop: '#F47E9A'
-    }
-  },
-  {
-    d:
-      'M1057.61 574.911C714.728 816.611 981.41 1265.21 653.695 978.822C325.98 692.433 -109.016 911.137 249.784 574.911C608.584 238.685 430.621 171 653.695 171C876.769 171 1400.48 333.211 1057.61 574.911Z',
-    scaleX: 1.5,
-    scaleY: 1.5,
-    rotate: 0,
-    translateX: 0,
-    translateY: 0,
-    duration: 2000,
-    gradient: {
-      x1: 924.134,
-      y1: 67.1109,
-      x2: 18.1781,
-      y2: 684.356,
-      start: '#A7F1D6',
-      stop: '#9D7EF4'
-    }
-  },
-  {
-    d:
-      'M1047.97 623.03C787.347 671.329 1031.85 771.83 644.058 1026.94C256.269 1282.05 506.347 749.756 240.147 623.03C-26.0531 496.304 544.062 505.041 644.058 219.119C744.054 -66.8016 1308.59 574.731 1047.97 623.03Z',
-    scaleX: 1.2,
-    scaleY: 1.2,
-    rotate: 0,
-    translateX: 0,
-    translateY: 0,
-    duration: 2000,
-    gradient: {
-      x1: 860.132,
-      y1: 140.089,
-      x2: -45.8232,
-      y2: 757.333,
-      start: '#F1D3A7',
-      stop: '#7EC9F4'
-    }
-  },
-  {
-    d:
-      'M1037.36 547.213C1415.24 763.013 372.661 1401.24 633.45 951.124C894.238 501.012 -86.7617 717.439 229.538 547.213C545.838 376.987 441.738 208.012 633.45 143.302C825.161 78.5916 659.484 331.413 1037.36 547.213Z',
-    scaleX: 1.9,
-    scaleY: 1,
-    rotate: 0,
-    translateX: 0,
-    translateY: 0,
-    duration: 2000,
-    gradient: {
-      x1: 853.133,
-      y1: 78.0671,
-      x2: -52.8226,
-      y2: 695.312,
-      start: '#F1A7A7',
-      stop: '#7EC9F4'
-    }
-  }
-];
 
 const headerElement = document.querySelector('.header');
 const contentSections = document.querySelectorAll('.content');
