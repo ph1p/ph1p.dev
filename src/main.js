@@ -5,6 +5,11 @@ import shapes from './assets/js/shapes';
 import './assets/scss/style.scss';
 import './assets/js/scrollMonitor';
 
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/service-worker.js');
+  });
+}
 
 const headerElement = document.querySelector('.header');
 const contentSections = document.querySelectorAll('.content');

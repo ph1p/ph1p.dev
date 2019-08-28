@@ -20,11 +20,12 @@
     "style-loader": "^1.0.0",
     "svg-inline-loader": "^0.8.0",
     "webpack": "^4.39.3",
-    "webpack-cli": "^3.3.7"
+    "webpack-cli": "^3.3.7",
+    "workbox-webpack-plugin": "^4.3.1"
   },
   "scripts": {
     "start": "NODE_ENV=development webpack -w",
-    "build": "NODE_ENV=production webpack",
+    "build": "rm -rf dist && NODE_ENV=production webpack",
     "deploy": "npm run build && npx gh-pages -d dist -b master"
   },
   "repository": {
