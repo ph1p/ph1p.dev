@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6d40dcc4ac7899afe3a0",
+    "revision": "002d928ef32d9423d07c",
     "url": "bundle.js"
   },
   {
@@ -112,11 +112,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "icons/ms-icon-70x70.png"
   },
   {
-    "revision": "0dd2abc4dcf2436785af280e31f49a75",
+    "revision": "0a719b03303bdb363230b9b60a78d09e",
     "url": "index.html"
   },
   {
-    "revision": "6d40dcc4ac7899afe3a0",
+    "revision": "002d928ef32d9423d07c",
     "url": "main.css"
   },
   {
