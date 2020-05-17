@@ -11,21 +11,21 @@ module.exports = {
   entry: './src/main.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js'
+    filename: 'bundle.js',
   },
   module: {
     rules: [
       {
         test: /\.svg$/,
-        loader: 'svg-inline-loader'
+        loader: 'svg-inline-loader',
       },
       {
         test: /\.(png|jpe?g|gif|ico)$/i,
         use: [
           {
-            loader: 'file-loader'
-          }
-        ]
+            loader: 'file-loader',
+          },
+        ],
       },
       {
         test: /\.(scss|css)$/,
@@ -33,17 +33,17 @@ module.exports = {
           {
             loader: MiniCssExtractPlugin.loader,
             options: {
-              hmr: ENVIRONMENT
-            }
+              hmr: ENVIRONMENT,
+            },
           },
           'css-loader',
           {
             loader: 'sass-loader',
             options: {
-              implementation: require('dart-sass')
-            }
-          }
-        ]
+              implementation: require('dart-sass'),
+            },
+          },
+        ],
       },
       {
         test: /\.m?js$/,
@@ -51,34 +51,36 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['@babel/preset-env']
-          }
-        }
-      }
-    ]
+            presets: ['@babel/preset-env'],
+          },
+        },
+      },
+    ],
   },
   plugins: [
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      template: 'src/index.html'
+      template: 'src/index.html',
     }),
-    new CopyPlugin([
-      {
-        from: './src/manifest.json',
-        to: './manifest.json'
-      },
-      {
-        from: './src/docker-compose.yml',
-        to: './docker-compose.yml'
-      },
-      {
-        from: './src/assets/img/icons/',
-        to: './icons'
-      }
-    ]),
+    new CopyPlugin({
+      patterns: [
+        {
+          from: './src/manifest.json',
+          to: './manifest.json',
+        },
+        {
+          from: './src/docker-compose.yml',
+          to: './docker-compose.yml',
+        },
+        {
+          from: './src/assets/img/icons/',
+          to: './icons',
+        },
+      ],
+    }),
     new MiniCssExtractPlugin({
       filename: '[name].css',
-      chunkFilename: '[id].css'
+      chunkFilename: '[id].css',
     }),
     new WorkboxPlugin.GenerateSW({
       runtimeCaching: [
@@ -91,12 +93,12 @@ module.exports = {
             expiration: {
               maxEntries: 30,
               maxAgeSeconds: 30 * 24 * 60 * 60, // 1 month
-              purgeOnQuotaError: true
+              purgeOnQuotaError: true,
             },
             cacheableResponse: {
-              statuses: [0, 200]
-            }
-          }
+              statuses: [0, 200],
+            },
+          },
         },
         {
           urlPattern: /^https:\/\/fonts\.gstatic\.com/,
@@ -104,15 +106,15 @@ module.exports = {
           options: {
             cacheName: 'google-fonts-webfonts',
             cacheableResponse: {
-              statuses: [0, 200]
+              statuses: [0, 200],
             },
             expiration: {
               maxAgeSeconds: 60 * 60 * 24 * 365,
-              purgeOnQuotaError: true
-            }
-          }
-        }
-      ]
-    })
-  ]
+              purgeOnQuotaError: true,
+            },
+          },
+        },
+      ],
+    }),
+  ],
 };
