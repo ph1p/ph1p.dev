@@ -1,16 +1,21 @@
 version: '3.3'
 
 services:
-  nginx:
+  ph1pdev:
     image: nginx:latest
     restart: always
     volumes:
       - ./:/usr/share/nginx/html
     labels:
-      - traefik.enable=true
-      - traefik.frontend.rule=Host:ph1p.dev
-      - traefik.port=80
-      - traefik.docker.network=proxy
+      - "traefik.enable=true"
+      - "traefik.http.routers.ph1pdev.tls"
+      - "traefik.http.routers.ph1pdev.tls.certresolver=letsencryptresolver"
+      - "traefik.http.services.ph1pdev.loadbalancer.server.port=80"
+      - "traefik.http.routers.ph1pdev.rule=Host(`ph1p.dev`) || Host(`www.ph1p.dev`)"
+      - "traefik.http.middlewares.ph1pdev-redirectregex.redirectregex.permanent=true"
+      - "traefik.http.middlewares.ph1pdev-redirectregex.redirectregex.regex=^https?://(www.)?ph1p.dev/(.*)"
+      - "traefik.http.middlewares.ph1pdev-redirectregex.redirectregex.replacement=https://ph1p.dev/$${2}"
+      - "traefik.http.routers.ph1pdev.middlewares=ph1pdev-redirectregex@docker"
     networks:
       - default
       - proxy
