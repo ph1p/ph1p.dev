@@ -1,0 +1,66 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const projects = [
+  {
+    name: 'IKEA LED-Wall',
+    url: 'https://github.com/ph1p/ikea-led-obegraensad',
+  },
+  {
+    name: 'Measure',
+    url: 'https://www.figma.com/community/plugin/739918456607459153/measure',
+  },
+  {
+    name: 'Blender Connect',
+    url: 'https://www.figma.com/community/plugin/1095047912165244715/blender-connect',
+  },
+  {
+    name: 'Figma Chat',
+    url: 'https://www.figma.com/community/plugin/742073255743594050/figma-chat',
+  },
+  {
+    name: 'Covr',
+    url: 'https://www.figma.com/community/plugin/961383676925301983/covr',
+  },
+];
+---
+
+<Layout title="ph1p">
+  <section
+    class="flex justify-between self-end flex-col items-start gap-y-14 sm:flex-row sm:items-center"
+  >
+    <div class="content w-12/12 sm:w-7/12 lg:w-6/12 xl:w-4/12">
+      <h2 class="text-xl font-bold mb-4">About</h2>
+      <p class="mb-3">
+        Hi, I'm Philip, a Software Developer from Germany. I have a deeppassion
+        for web development and all its facets.
+      </p>
+      <p class="mb-3">
+        I thrive on experimenting with new technologies and enjoy creating tools
+        that help people solve their problems efficiently.
+      </p>
+      <p class="mb-3">See you in space 👨‍🚀</p>
+    </div>
+    <nav class="projects self-start" aria-label="Projectsmenu">
+      <h3 aria-hidden="true" class="font-bold text-xl mb-4">Projects</h3>
+      <ul role="menu">
+        {
+          projects.map((project) => (
+            <li>
+              <a
+                role="menuitem"
+                target="_blank"
+                href={project.url}
+                class="link"
+              >
+                {project.name}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+  </section>
+</Layout>
+
+<style></style>
