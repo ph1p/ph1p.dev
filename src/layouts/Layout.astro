@@ -120,7 +120,7 @@ const socials = [
             <ul role="menu">
               {
                 socials.map((social) => (
-                  <li>
+                  <li role="presentation">
                     <a
                       role="menuitem"
                       class="link"
@@ -128,11 +128,8 @@ const socials = [
                       href={social.url}
                     >
                       {social.oldName && (
-                        <span class="line-through mr-2 decoration-neutral-300 text-neutral-300 dark:decoration-neutral-700 dark:text-neutral-700">
-                          {social.oldName}
-                        </span>
-                      )}
-                      {social.name}
+                        <span class="line-through mr-2 decoration-neutral-300 text-neutral-300 dark:decoration-neutral-400 dark:text-neutral-400">{social.oldName}</span>
+                      )}{social.name}
                     </a>
                   </li>
                 ))
