@@ -39,7 +39,7 @@ const socials = [
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body class="bg-black p-10 text-white md:p-20 sm:h-screen">
+  <body class="bg-white text-black dark:bg-black dark:text-white p-10 md:p-20 sm:h-screen">
     <main class="grid grid-rows-header h-full gap-y-28">
       <header class="flex justify-between items-start gap-x-8">
         <div class="logo">
@@ -51,12 +51,14 @@ const socials = [
             xmlns="http://www.w3.org/2000/svg"
           >
             <rect
+              class="fill-black dark:fill-white"
               y="31.1106"
               width="15.5554"
               height="67.4066"
               rx="7.7777"
               fill="white"></rect>
             <rect
+              class="fill-black dark:fill-white"
               x="103.703"
               y="31.1106"
               width="15.5554"
@@ -64,6 +66,7 @@ const socials = [
               rx="7.7777"
               fill="white"></rect>
             <rect
+              class="fill-black dark:fill-white"
               x="41.4844"
               y="-0.000244141"
               width="15.5554"
@@ -71,6 +74,7 @@ const socials = [
               rx="7.7777"
               fill="white"></rect>
             <rect
+              class="fill-black dark:fill-white"
               x="20.7422"
               y="31.1106"
               width="15.5554"
@@ -78,6 +82,7 @@ const socials = [
               rx="7.7777"
               fill="white"></rect>
             <rect
+              class="fill-black dark:fill-white"
               x="124.445"
               y="31.1106"
               width="15.5554"
@@ -85,6 +90,7 @@ const socials = [
               rx="7.7777"
               fill="white"></rect>
             <rect
+              class="fill-black dark:fill-white"
               x="62.2188"
               y="31.1106"
               width="15.5554"
@@ -92,6 +98,7 @@ const socials = [
               rx="7.7777"
               fill="white"></rect>
             <rect
+              class="fill-black dark:fill-white"
               x="62.2188"
               y="7.77734"
               width="15.5554"
@@ -99,6 +106,7 @@ const socials = [
               rx="7.77768"
               fill="white"></rect>
             <rect
+              class="fill-black dark:fill-white"
               x="82.9609"
               y="-0.000244141"
               width="15.5554"
@@ -120,7 +128,7 @@ const socials = [
                       href={social.url}
                     >
                       {social.oldName && (
-                        <span class="line-through decoration-neutral-700 mr-2 text-neutral-700">
+                        <span class="line-through mr-2 decoration-neutral-300 text-neutral-300 dark:decoration-neutral-700 dark:text-neutral-700">
                           {social.oldName}
                         </span>
                       )}
@@ -150,6 +158,6 @@ const socials = [
     box-sizing: border-box;
   }
   a.link {
-    @apply relative inline-block px-0 py-0.5 before:content-[''] before:absolute before:h-0.5 before:bg-white before:transition-all before:duration-[0.1s] before:ease-[ease-in-out] before:z-[-1] before:bottom-0 before:-inset-x-0.5 hover:text-black hover:before:h-full;
+    @apply relative inline-block px-0 py-0.5 before:content-[''] before:absolute before:h-0.5 before:bg-black dark:before:bg-white before:transition-all before:duration-[0.1s] before:ease-[ease-in-out] before:z-[-1] before:bottom-0 before:-inset-x-0.5 hover:text-white dark:hover:text-black hover:before:h-full;
   }
 </style>
